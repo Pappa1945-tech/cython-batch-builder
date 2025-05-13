@@ -50,6 +50,41 @@ Python is elegant, but performance and code security are often concerns in produ
   - 🐧 Linux: GCC / Clang
   - 🍎 macOS: Clang (Xcode)
 
+🧠 Behind the Build Logic
+Uses a temporary directory per file to isolate builds
+
+Renames .py to .pyx if needed
+
+Compiles with:
+
+language="c++"
+
+define_macros=[("NDEBUG", "1")]
+
+extra_compile_args=["-O3", "-fomit-frame-pointer"]
+
+📈 My Mission as a Developer
+As the creator of this tool, I focus on:
+
+Execution efficiency
+
+Code security
+
+Automation at scale
+
+Developer-friendly tooling
+
+I built this project to address real deployment friction I experienced working on high-performance backends and API servers.
+
+👋 About Me
+Pappa1945-tech
+
+GitHub: https://github.com/Pappa1945-tech
+
+Passionate about Python performance, backend systems, and automation.
+
+Seeking opportunities in system architecture, API infrastructure, and Python development.
+
 Install dependencies:
 
 ```bash
