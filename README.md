@@ -76,6 +76,32 @@ Developer-friendly tooling
 
 I built this project to address real deployment friction I experienced working on high-performance backends and API servers.
 
+⚙️ How It Works
+🧠 Detects whether the input is a .py or .pyx file.
+
+🔄 Automatically renames .py to .pyx if needed.
+
+🛠️ Generates a temporary setup.py using setuptools and Cython.
+
+🧱 Compiles the C/C++ code with the appropriate compiler (gcc or msvc).
+
+🧹 Deletes temporary files and folders (.c, .html, /build/, etc.).
+
+✅ Final .pyd or .so binary is placed next to the source.
+
+💡 Why Use Cython Batch Builder?
+✅ Boost Performance — Convert Python to fast C extensions.
+
+🔒 Secure Code — Hide implementation logic by distributing compiled binaries.
+
+⏱️ Save Time — Batch compile dozens of files with a single command.
+
+🧹 Clean Workspace — Automatically removes build clutter.
+
+💼 Production Ready — Works great in real-world automated pipelines.
+
+
+
 👋 About Me
 Pappa1945-tech
 
